@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.aboutUs,
+.makeAnAppointment,
+.pets,
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+/* Header Start */
+.header {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px 0 black;
+    background-color: white;
+}
+.header__logo {
+    height: 50px;
+    margin-left: 20px;
+}
+.header__input {
+    display: none;
+}
+.header__input:checked ~ .header__navigation {
+    visibility: visible;
+    opacity: 1;
+}
+.header__button {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border: 3px dashed black;
+}
+/* .header__button__element {
+    height: 13px;
+    border: 5px solid #6A00AC;
+} */
+.header__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    top: 50px;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border: 1px solid black;
+    background-color: white;
+}
+.header__navigation__item {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+.header__navigation__item a {
+    text-decoration: none;
+    color: black;
+}
+/* Header End */
+
+/* About Us Start */
+.aboutUs {
+    margin-top: 50px;
+}
+.aboutUs__image {
+    width: 100%;
+    max-width: 900px;
+}
+/* About Us End */
+
+/* Make An Appointment Start */
+.makeAnAppointment {
+    background-color: lightpink;
+}
+/* Make An Appointment End */
+
+/* Pets Start */
+/* Pets End */
+
+/* Locations Start */
+.locations {
+    background-color: lightcoral;
+}
+.locations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+/* Locations End */
+
+/* Footer Start */
+.footer {
+    background-color: lightgray;
+}
+.footer__logo {
+    height: 50px;
+    margin-left: 20px;
+}
+.footer__copyright {
+    margin-right: 20px;
+}
+/* Footer End */

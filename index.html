@@ -15,67 +15,87 @@
             <img class="header__logo" src="./assets/logo.svg" alt="Logo Image">
             <input class="header__input" type="checkbox" id="menu">
             <nav class="header__navigation">
-                <ul class="header__navigation__item"><a href="">About Us</a></ul>
-                <ul class="header__navigation__item"><a href="">Make An Appointment</a></ul>
-                <ul class="header__navigation__item"><a href="">Pets</a></ul>
-                <ul class="header__navigation__item"><a href="">Our Locations</a></ul>
-                <ul class="header__navigation__item"><a href="">Contacts</a></ul>
+                <li class="header__navigation__item"><a href="">About us</a></li>
+                <li class="header__navigation__item"><a href="">Make an appointment</a></li>
+                <li class="header__navigation__item"><a href="">Our pets</a></li>
+                <li class="header__navigation__item"><a href="">Our locations and contacts</a></li>
             </nav>
             <label class="header__button" for="menu">
-                <div class="header__button__element"></div>
-                <div class="header__button__element"></div>
-                <div class="header__button__element"></div>
+                <div class="header__button__bar1"></div>
+                <div class="header__button__bar2"></div>
+                <div class="header__button__bar3"></div>
             </label>
         </header>
         <main>
             <section class="aboutUs">
-                <h1>Find your new best friend for free!</h1>
+                <h1>Find your new best friend with our help!</h1>
                 <img class="aboutUs__image" src="./assets/pets.png" alt="Pets">
                 <p>Welcome to our adoption service "AdoptMe", where furry companions await their forever homes! Dive into a world of wagging tails, gentle purrs, and unconditional love. Our diverse selection of animals ensures there's a perfect match for every adopter. From playful pups to sophisticated seniors, each one comes with a unique story and a heart full of companionship. Explore our adoption gallery and let the journey to finding your new best friend begin!</p>
             </section>
             <section class="makeAnAppointment">
                 <h2>We can help you choose your new pet!</h2>
                 <p>Online and offline consultations are available</p>
-                <input type="datetime-local" name="" id="">
-                <input type="email" name="email" placeholder="Enter your email">
-                <input type="submit" value="Send">
+                <input class="makeAnAppointment__date" type="datetime-local" name="date">
+                <input class="makeAnAppointment__email" type="email" name="email" placeholder="Enter your email" autocomplete="email">
+                <input class="makeAnAppointment__submit" type="submit" value="Send">
             </section>
             <section class="pets">
-                <h2>Virtual helper for choosing a new pet</h2>
-                <button>HELP ME TO CHOOSE</button>
+                <ul class="pets__gallery">
+                    <li class="pets__gallery__item">
+                        <h3>Larry, the dog</h3>
+                        <img class="pets__gallery__item__image" src="./assets/dog.png" alt="Larry, the dog">
+                        <p>Meet Larry, a spirited Jack Russell Terrier, eagerly awaiting his forever friend at the adoption center. His boundless energy and affectionate heart are ready to bring joy to a loving home. Will you be the one to make Larry's tail wag with happiness?</p>
+                    </li>
+                    <li class="pets__gallery__item">
+                        <h3>Jazzy, the cat</h3>
+                        <img class="pets__gallery__item__image" src="./assets/cat.png" alt="Jazzy, the cat">
+                        <p>Enter Jazzy, a regal Siamese cat gracing the adoption center with elegance. With striking blue eyes and a coat as soft as silk, Jazzy yearns for a loving companion. Will you be the one to share your home with this royal feline?</p>
+                    </li>
+                    <li class="pets__gallery__item">
+                        <h3>Zuzzy, the hamster</h3>
+                        <img class="pets__gallery__item__image" src="./assets/hamster.png" alt="Zuzzy, the hamster">
+                        <p>Tiny Zuzzy, a golden hamster, waits in the adoption center, spinning tales of curiosity and warmth. Seeking a pocket-sized companion? Zuzzy, with twinkling eyes and a heart full of cuddles, longs for a caring friend to embark on adventures. Will you be the one to welcome Zuzzy into your heart?</p>
+                    </li>
+                </ul>
             </section>
             <section class="locations">
                 <h2>Where you can find us:</h2>
                 <ul class="locations__list">
-                    <li class="locations__address">
+                    <li>
                         Kyiv, Ukraine<br>
                         23 Khreschatyk Street, Apt 5<br>
-                        Postal Code: 01001
+                        Postal Code: 01001<br>
+                        +380 50 123 4567
                     </li>
-                    <li class="locations__address">
+                    <li>
                         Lviv, Ukraine<br>
                         56 Shevchenko Avenue, Unit 12B<br>
-                        Postal Code: 79000
+                        Postal Code: 79000<br>
+                        +380 63 987 6543
                     </li>
-                    <li class="locations__address">
+                    <li>
                         Kharkiv, Ukraine<br>
                         87 Pushkinska Street, Suite 3D<br>
-                        Postal Code: 61023
+                        Postal Code: 61023<br>
+                        +380 67 234 5678
                     </li>
-                    <li class="locations__address">
+                    <li>
                         New York, NY, USA<br>
                         55 Broadway, Suite 301<br>
-                        ZIP Code: 10006
+                        ZIP Code: 10006<br>
+                        +1 (555) 555-1234
                     </li>
-                    <li class="locations__address">
+                    <li>
                         Warsaw, Poland<br>
                         8 Mariacka Street, Floor 3<br>
-                        Postal Code: 00-400
+                        Postal Code: 00-400<br>
+                        +48 512 345 678
                     </li>
-                    <li class="locations__address">
+                    <li>
                         Sofia, Bulgaria<br>
                         42 Vitosha Boulevard, Floor 2<br>
-                        Postal Code: 1000
+                        Postal Code: 1000<br>
+                        +359 88 765 4321
                     </li>
                 </ul>
             </section>

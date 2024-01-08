@@ -15,10 +15,10 @@
             <img class="header__logo" src="./assets/logo.svg" alt="Logo Image">
             <input class="header__input" type="checkbox" id="menu">
             <nav class="header__navigation">
-                <li class="header__navigation__item"><a href="">About us</a></li>
-                <li class="header__navigation__item"><a href="">Make an appointment</a></li>
-                <li class="header__navigation__item"><a href="">Our pets</a></li>
-                <li class="header__navigation__item"><a href="">Our locations and contacts</a></li>
+                <li class="header__navigation__item"><a href="#aboutUs">About us</a></li>
+                <li class="header__navigation__item"><a href="#makeAnAppointment">Make an appointment</a></li>
+                <li class="header__navigation__item"><a href="#pets">Our pets</a></li>
+                <li class="header__navigation__item"><a href="#locations">Our locations and contacts</a></li>
             </nav>
             <label class="header__button" for="menu">
                 <div class="header__button__bar1"></div>
@@ -27,19 +27,19 @@
             </label>
         </header>
         <main>
-            <section class="aboutUs">
+            <section class="aboutUs" id="aboutUs">
                 <h1>Find your new best friend with our help!</h1>
                 <img class="aboutUs__image" src="./assets/pets.png" alt="Pets">
-                <p>Welcome to our adoption service "AdoptMe", where furry companions await their forever homes! Dive into a world of wagging tails, gentle purrs, and unconditional love. Our diverse selection of animals ensures there's a perfect match for every adopter. From playful pups to sophisticated seniors, each one comes with a unique story and a heart full of companionship. Explore our adoption gallery and let the journey to finding your new best friend begin!</p>
+                <p class="aboutUs__description">Welcome to our adoption service "AdoptMe", where furry companions await their forever homes! Dive into a world of wagging tails, gentle purrs, and unconditional love. Our diverse selection of animals ensures there's a perfect match for every adopter. From playful pups to sophisticated seniors, each one comes with a unique story and a heart full of companionship. Explore our adoption gallery and let the journey to finding your new best friend begin!</p>
             </section>
-            <section class="makeAnAppointment">
+            <section class="makeAnAppointment" id="makeAnAppointment">
                 <h2>We can help you choose your new pet!</h2>
                 <p>Online and offline consultations are available</p>
                 <input class="makeAnAppointment__date" type="datetime-local" name="date">
                 <input class="makeAnAppointment__email" type="email" name="email" placeholder="Enter your email" autocomplete="email">
                 <input class="makeAnAppointment__submit" type="submit" value="Send">
             </section>
-            <section class="pets">
+            <section class="pets" id="pets">
                 <ul class="pets__gallery">
                     <li class="pets__gallery__item">
                         <h3>Larry, the dog</h3>
@@ -58,40 +58,40 @@
                     </li>
                 </ul>
             </section>
-            <section class="locations">
+            <section class="locations" id="locations">
                 <h2>Where you can find us:</h2>
                 <ul class="locations__list">
-                    <li>
+                    <li class="locations__list__item">
                         Kyiv, Ukraine<br>
                         23 Khreschatyk Street, Apt 5<br>
                         Postal Code: 01001<br>
                         +380 50 123 4567
                     </li>
-                    <li>
+                    <li class="locations__list__item">
                         Lviv, Ukraine<br>
                         56 Shevchenko Avenue, Unit 12B<br>
                         Postal Code: 79000<br>
                         +380 63 987 6543
                     </li>
-                    <li>
+                    <li class="locations__list__item">
                         Kharkiv, Ukraine<br>
                         87 Pushkinska Street, Suite 3D<br>
                         Postal Code: 61023<br>
                         +380 67 234 5678
                     </li>
-                    <li>
+                    <li class="locations__list__item">
                         New York, NY, USA<br>
                         55 Broadway, Suite 301<br>
                         ZIP Code: 10006<br>
                         +1 (555) 555-1234
                     </li>
-                    <li>
+                    <li class="locations__list__item">
                         Warsaw, Poland<br>
                         8 Mariacka Street, Floor 3<br>
                         Postal Code: 00-400<br>
                         +48 512 345 678
                     </li>
-                    <li>
+                    <li class="locations__list__item">
                         Sofia, Bulgaria<br>
                         42 Vitosha Boulevard, Floor 2<br>
                         Postal Code: 1000<br>

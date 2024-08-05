@@ -1,212 +1,217 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+	scroll-margin-top: 50px;
 }
-
-@media screen and (min-width: 600px) {
-    .locations__list,
-    .pets__gallery {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-    }
-    .header__navigation {
-        position: static !important;
-        flex-direction: row !important;
-        border: none !important;
-        max-width: 750px;
-        width: 100% !important;
-        margin-right: 20px;
-        background-color: transparent !important;
-    }
-    .header__button {
-        display: none;
-    }
-}
-
 .header,
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
 }
 .aboutUs,
 .makeAnAppointment,
 .pets,
 .locations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-    padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+	gap: 15px;
 }
 
 /* Header Start */
 .header {
-    position: fixed;
-    top: 0;
-    box-shadow: 0 0 10px 0 black;
-    background-color: white;
+	position: fixed;
+	top: 0;
+	box-shadow: 0 0 10px 0 black;
+	background-color: white;
 }
 .header__logo {
-    height: 50px;
-    margin-left: 20px;
+	margin-left: 20px;
+	height: 50px;
 }
 .header__input {
-    display: none;
+	display: none;
 }
 .header__input:checked ~ .header__navigation {
-    right: 0px;
+	right: 0px;
 }
 .header__input:checked ~ * .header__button__bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+	transform: translate(0, 11px) rotate(-45deg);
 }
 .header__input:checked ~ * .header__button__bar2 {
-    opacity: 0;
+	opacity: 0;
 }
 .header__input:checked ~ * .header__button__bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+	transform: translate(0, -11px) rotate(45deg);
 }
 .header__navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 150px;
-    top: 50px;
-    right: -150px;
-    transition: 0.25s;
-    list-style: none;
-    border: 1px solid black;
-    background-color: white;
+	display: flex;
+	position: fixed;
+	top: 50px;
+	right: -150px;
+	flex-direction: column;
+	align-items: center;
+	transition: 0.25s;
+	border: 1px solid black;
+	background-color: white;
+	width: 150px;
+	list-style: none;
 }
 .header__navigation__item {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
 }
 .header__navigation__item a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 .header__button {
-    margin-right: 20px;
+	margin-right: 20px;
+	cursor: pointer;
 }
 .header__button__bar1,
 .header__button__bar2,
 .header__button__bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    transition: 0.25s;
+	transition: 0.25s;
+	margin: 6px 0;
+	background-color: black;
+	width: 35px;
+	height: 5px;
 }
 /* Header End */
 
 /* About us Start */
 .aboutUs {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 .aboutUs__image {
-    width: 100%;
-    max-width: 900px;
+	width: 100%;
+	max-width: 900px;
 }
 .aboutUs__description {
-    max-width: 900px;
+	max-width: 700px;
 }
 /* About us End */
 
 /* Make an appointment Start */
 .makeAnAppointment {
-    background-image: url(./assets/cat_paw.png);
-    background-size: 300px;
-    background-position: right -50px top -50px;
-    background-repeat: no-repeat;
-    background-color: #AAA1C8;
-    color: white;
-    text-shadow: 1px 1px black;
+	background-color: #AAA1C8;
+	background-image: url(./assets/cat_paw.png);
+	background-position: right -50px top -50px;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	text-shadow: 1px 1px black;
+	color: white;
 }
 .makeAnAppointment__date,
 .makeAnAppointment__email,
 .makeAnAppointment__submit {
-    width: 200px;
-    height: 50px;
-    outline: none;
-    background-color: white;
+	outline: none;
+	background-color: white;
+	width: 200px;
+	height: 50px;
 }
 .makeAnAppointment__date,
 .makeAnAppointment__email {
-    padding: 10px;
+	padding: 10px;
 }
 .makeAnAppointment__submit {
-    background-color: white;
+	background-color: white;
+	cursor: pointer;
 }
 /* Make an appointment End */
 
 /* Pets Start */
 .pets {
-    background-color: #F5E6E8;
+	background-color: #F5E6E8;
 }
 .pets__gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 3000px;
-    gap: 15px;
-    list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 3000px;
+	list-style: none;
+	gap: 15px;
 }
 .pets__gallery__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 650px;
-    padding: 30px;
-    gap: 15px;
-    border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	padding: 30px;
+	width: 300px;
+	height: 650px;
+	gap: 15px;
 }
 .pets__gallery__item__image {
-    max-height: 400px;
-    max-width: 320px;
+	max-width: 320px;
+	max-height: 400px;
 }
 /* Pets End */
 
 /* Our locations and contacts Start */
 .locations {
-    background-image: url(./assets/dog_paw.png);
-    background-size: 300px;
-    background-position: left -50px bottom -50px;
-    background-repeat: no-repeat;
-    background-color: #967AA1;
-    color: white;
-    text-shadow: 1px 1px black;
+	background-color: #967AA1;
+	background-image: url(./assets/dog_paw.png);
+	background-position: left -50px bottom -50px;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	text-shadow: 1px 1px black;
+	color: white;
 }
 .locations__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 785px;
-    gap: 30px;
-    list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 785px;
+	list-style: none;
+	gap: 30px;
 }
 .locations__list__item {
-    width: 240px;
-    text-wrap: nowrap;
+	width: 240px;
+	text-wrap: nowrap;
 }
 /* Our locations and contacts End */
 
 /* Footer Start */
 .footer__logo {
-    height: 50px;
-    margin-left: 20px;
+	margin-left: 20px;
+	height: 50px;
 }
 .footer__copyright {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 /* Footer End */
+
+/* Media Start */
+@media screen and (min-width: 600px) {
+	.header__navigation {
+		position: static;
+		flex-direction: row;
+		margin-right: 20px;
+		border: none;
+		background-color: transparent;
+		width: 100%;
+		max-width: 750px;
+	}
+	.header__button {
+		display: none;
+	}
+	.pets__gallery,
+    .locations__list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+/* Media End */

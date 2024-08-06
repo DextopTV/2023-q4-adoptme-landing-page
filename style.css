@@ -180,7 +180,6 @@
 }
 .locations__list__item {
 	width: 240px;
-	text-wrap: nowrap;
 }
 /* Our locations and contacts End */
 
@@ -189,8 +188,10 @@
 	margin-left: 20px;
 	height: 50px;
 }
-.footer__copyright {
+.footer__text {
 	margin-right: 20px;
+	text-align: right;
+	text-wrap: balance;
 }
 /* Footer End */
 

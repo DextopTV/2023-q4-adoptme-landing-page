@@ -1,6 +1,6 @@
 # AdoptMe: A Simple Adoption Website
 ## AdoptMe is a static website built with HTML and CSS to help animals find their forever homes.
-### This site was built using [GitHub Pages](https://dextoptv.github.io/2023-q4-adoptme-landing-page/).
+### This site was built using [GitHub Pages](https://dextoptv.github.io/2024-q1-adoptme-landing-page/).
 **Technologies Used:**
 - HTML
 - CSS

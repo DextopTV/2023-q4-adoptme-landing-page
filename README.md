@@ -7,7 +7,19 @@
 
 **Methodologies Used:**
 - Responsive Design
+- Mobile-First Design
 - BEM Methodology
+
+**Techniques & Approaches Used:**
+- Flexbox
+- Media Queries
+- Semantic HTML Elements (header, main, section, footer, etc.)
+- Google Fonts
+- CSS Transitions
+- CSS Background Images and Positioning
+- HTML Form Elements
+- Smooth Scrolling
+- Custom Checkbox for Menu Toggle
 
 **Features:**
 - Displays available animals with brief descriptions
